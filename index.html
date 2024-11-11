@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Dynamic Card Generator</h1>
+        <p class="header-subtitle">Create professional cards dynamically with images or URLs!</p>
+    </header>
+
+    <div class="form-container">
+        <h2 class="add-card-title">Add New Card</h2>
+        <form id="cardForm">
+            <input type="text" id="title" placeholder="Enter Title" required>
+            <input type="text" id="channel" placeholder="Enter Channel Name" required>
+            <input type="number" id="views" placeholder="Enter Views" required>
+            <input type="number" id="monthsOld" placeholder="Enter Months Ago" required>
+            <input type="text" id="duration" placeholder="Enter Duration (e.g., 10:50)" required>
+            
+            <!-- URL input for thumbnail -->
+            <input type="url" id="thumbnailUrl" placeholder="Enter Thumbnail URL (optional)">
+            
+            <!-- File upload for thumbnail -->
+            <input type="file" id="thumbnailUpload" accept="image/*" placeholder="Upload Thumbnail Image (optional)">
+
+            <button type="submit" class="submit-button">Add Card</button>
+        </form>
+    </div>
+
+    <div class="cards-wrapper" id="cardsWrapper">
+        <!-- Cards will be dynamically added here -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dynamic Card Generator. Created by Shakib. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
